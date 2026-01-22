@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { QRCodeSVG } from 'qrcode.react';
 
-const IPFS_GATEWAY_URL = 'https://ipfs.io/ipfs/';
+const IPFS_GATEWAY_URL = 'https://gateway.pinata.cloud/ipfs/';
 const ETHERSCAN_BASE_URL = 'https://sepolia.etherscan.io/address/'; 
 
 const ContractDetails = ({ contract, showQR = true }) => {
