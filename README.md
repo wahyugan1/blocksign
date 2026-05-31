@@ -69,7 +69,7 @@ cp .env.example .env
 ```
 ### 4️⃣ Run the App (Development)
 ```bash
-npm run dev
+npm start
 ```
 Aplikasi akan berjalan di:  
 👉 http://localhost:5173/
