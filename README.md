@@ -2,17 +2,25 @@
 
 ### Sistem Verifikasi Kontrak Digital Terdesentralisasi Berbasis Blockchain dan IPFS
 
-> Implementasi Smart Contract, IPFS, dan Wallet-Based Digital Signature untuk Verifikasi Kontrak Digital yang Aman dan Transparan.
+> Implementasi Smart Contract, IPFS, dan Wallet-Based Digital Signature untuk Verifikasi Kontrak Digital yang Aman, Transparan, dan Terdesentralisasi.
 
 ---
 
 # 📸 Tampilan Sistem
 
+### Halaman Utama
+
 ![Halaman Utama](assets/homepage.png)
+
+### Halaman Upload Dokumen
 
 ![Upload Dokumen](assets/upload-page.png)
 
+### Halaman Verifikasi Dokumen
+
 ![Verifikasi Dokumen](assets/verification-page.png)
+
+### Halaman Riwayat Kontrak
 
 ![Riwayat Kontrak](assets/history-page.png)
 
@@ -28,7 +36,7 @@ Proyek ini dikembangkan sebagai bagian dari penelitian skripsi dengan judul:
 
 > **A Decentralized System for Dual-Signed Digital Contract Verification Using Blockchain Smart Contract and IPFS**
 
-Universitas Islam Nahdlatul Ulama Jepara (2026).
+Universitas Islam Nahdlatul Ulama Jepara (2025).
 
 ---
 
@@ -43,6 +51,14 @@ Pada sistem kontrak digital konvensional masih terdapat beberapa permasalahan, a
 * Kurangnya transparansi dalam proses verifikasi.
 
 BlockSign dikembangkan untuk mengatasi permasalahan tersebut melalui pemanfaatan teknologi blockchain dan penyimpanan terdesentralisasi.
+
+---
+
+# 💡 Solusi yang Ditawarkan
+
+BlockSign menawarkan pendekatan berbasis blockchain untuk memastikan integritas kontrak digital melalui kombinasi **Smart Contract**, **IPFS**, dan **Digital Signature**.
+
+Pendekatan ini memungkinkan proses verifikasi dilakukan secara transparan tanpa memerlukan pihak ketiga sebagai validator, sehingga meningkatkan kepercayaan terhadap dokumen digital yang dipertukarkan antar pihak.
 
 ---
 
@@ -71,14 +87,13 @@ Ruang lingkup pekerjaan yang dilakukan meliputi:
 * Frontend Development
 * Wallet Integration
 * IPFS Integration
+* Blockchain Integration
 * System Testing
 * Deployment pada Ethereum Sepolia Testnet
 
 ---
 
 # 🏗️ Arsitektur Sistem
-
-> **[LETAKKAN DIAGRAM ARSITEKTUR SISTEM DI SINI]**
 
 ![System Architecture](docs/architecture.png)
 
@@ -92,9 +107,28 @@ Sistem terdiri dari beberapa komponen utama:
 
 ---
 
-# 🔄 Alur Proses Penandatanganan Kontrak
+# 📋 Use Case Diagram
 
-> **[LETAKKAN ACTIVITY DIAGRAM / WORKFLOW DI SINI]**
+![Use Case Diagram](docs/usecase.png)
+
+Diagram ini menggambarkan interaksi antara pengguna dan fitur utama yang tersedia pada sistem.
+
+Aktor utama yang terlibat:
+
+* Party A
+* Party B
+* Public User
+
+Fitur utama:
+
+* Upload Contract
+* Sign Contract
+* Verify Contract
+* View Contract History
+
+---
+
+# 🔄 Alur Proses Penandatanganan Kontrak
 
 ![Workflow](docs/workflow.png)
 
@@ -131,9 +165,122 @@ Tahapan proses dalam sistem:
 ### Public Verification
 
 * Verifikasi dokumen menggunakan CID atau file asli.
-* Validasi dilakukan dengan mencocokkan hash dokumen terhadap data on-chain.
+* Validasi dilakukan dengan mencocokkan hash dokumen terhadap data *on-chain*.
 
 ### Selective Access History
 
 * Riwayat kontrak hanya dapat diakses oleh pihak yang terlibat.
 * Verifikasi publik tetap tersedia tanpa membuka informasi sensitif.
+
+---
+
+# 🧩 Tech Stack
+
+| Layer              | Technology                        |
+| ------------------ | --------------------------------- |
+| Frontend           | React.js, Tailwind CSS, Ethers.js |
+| Smart Contract     | Solidity                          |
+| Blockchain Network | Ethereum Sepolia                  |
+| Storage            | IPFS (Pinata)                     |
+| Wallet Integration | MetaMask                          |
+| Indexing           | The Graph Protocol                |
+
+---
+
+# 📊 Hasil Implementasi
+
+Sistem berhasil diimplementasikan dan diuji pada jaringan Ethereum Sepolia Testnet dengan kemampuan sebagai berikut:
+
+* Upload dokumen kontrak ke IPFS.
+* Penyimpanan CID dokumen pada blockchain.
+* Penandatanganan kontrak menggunakan MetaMask Wallet.
+* Verifikasi tanda tangan digital berbasis wallet address.
+* Verifikasi dokumen menggunakan CID maupun file asli.
+* Penyimpanan metadata kontrak secara permanen pada blockchain.
+* Riwayat kontrak berdasarkan wallet yang terlibat.
+* Verifikasi publik tanpa membuka isi dokumen.
+
+---
+
+# 📂 Struktur Proyek
+
+```text
+APP-BLOCKSIGN/
+├── assets/
+├── docs/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   ├── services/
+│   └── ...
+├── package.json
+└── README.md
+```
+
+---
+
+# ⚙️ Instalasi
+
+### Clone Repository
+
+```bash
+git clone https://github.com/wahyugan1/blocksign.git
+cd blocksign
+```
+
+### Install Dependency
+
+```bash
+npm install
+```
+
+### Menjalankan Aplikasi
+
+```bash
+npm start
+```
+
+---
+
+# 🔒 Security Notes
+
+* Jangan mengunggah file `.env` ke repository publik.
+* Jangan membagikan Private Key atau Seed Phrase wallet.
+* Gunakan wallet khusus testnet selama proses pengembangan dan pengujian.
+
+---
+
+# 🎓 Kontribusi Akademik
+
+Proyek ini menunjukkan implementasi nyata dari:
+
+* Blockchain-Based Verification System
+* Smart Contract Development
+* Digital Signature Verification
+* Decentralized Storage Integration
+* Web3 Authentication
+* Distributed Trust Architecture
+
+dalam studi kasus verifikasi kontrak digital.
+
+---
+
+# 👨‍🎓 Author
+
+**Wahyu Tri Kumolo Adi**
+
+Sarjana Sistem Informasi
+Universitas Islam Nahdlatul Ulama Jepara
+
+📧 [wahyutrikum@gmail.com](mailto:wahyutrikum@gmail.com)
+
+🌐 GitHub: https://github.com/wahyugan1
+
+---
+
+# 📄 License
+
+MIT License
