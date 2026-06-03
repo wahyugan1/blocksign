@@ -8,19 +8,11 @@
 
 # 📸 Tampilan Sistem
 
-> **[LETAKKAN SCREENSHOT HALAMAN UTAMA]**
-
 ![Halaman Utama](assets/homepage.png)
-
-> **[LETAKKAN SCREENSHOT HALAMAN UNGGAH DOKUMEN]**
 
 ![Upload Dokumen](assets/upload-page.png)
 
-> **[LETAKKAN SCREENSHOT HALAMAN VERIFIKASI]**
-
 ![Verifikasi Dokumen](assets/verification-page.png)
-
-> **[LETAKKAN SCREENSHOT HALAMAN RIWAYAT]**
 
 ![Riwayat Kontrak](assets/history-page.png)
 
@@ -36,7 +28,7 @@ Proyek ini dikembangkan sebagai bagian dari penelitian skripsi dengan judul:
 
 > **A Decentralized System for Dual-Signed Digital Contract Verification Using Blockchain Smart Contract and IPFS**
 
-Universitas Islam Nahdlatul Ulama Jepara (2025).
+Universitas Islam Nahdlatul Ulama Jepara (2026).
 
 ---
 
